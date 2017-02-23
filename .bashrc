@@ -3,8 +3,13 @@
 alias less="less -S"
 alias ll='ls -alF'
 
-function cs() {
+function cds() {
   cd "$@" && ll
 }
 
-alias cd='cs'
+alias cd='cds'
+
+function wght() {
+  # size of location by folder
+  du -h -c -d 1 "$@" 2>/dev/null |sort -h
+}
