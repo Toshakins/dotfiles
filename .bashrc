@@ -15,3 +15,9 @@ function wght() {
 }
 
 alias dumpost='sudo -u postgres  pg_dumpall -U postgres -h 127.0.0.1 | tar czvf db_all_`date +%F`.sql'
+
+##### OS X
+# shows notification and says it
+function notif() {
+   osascript -e 'display notification "'${1}'" with title "Important"' && say -v Milena "'${1}'";
+}
