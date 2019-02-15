@@ -30,6 +30,13 @@ armaggedon() {
     docker rmi -f $(docker images -qa)
 }
 
+docker-prune () 
+{ 
+    docker-compose down && docker system prune -f && docker network ls | grep dashboard_unico_aero_default | awk '{print $1 }' | xargs docker network rm
+}
+
+
+
 ##### OS X
 # shows notification and says it
 function notif() {
