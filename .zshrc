@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PATH="$PATH:~/.bin"
+
 alias ll=ls -alF
 
 aws() {
