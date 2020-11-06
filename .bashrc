@@ -2,6 +2,7 @@
 
 alias less="less -S"
 alias ll='ls -alF'
+alias scp='rsync --verbose --progress --archive'
 
 function cds() {
   cd "$@" && ll
