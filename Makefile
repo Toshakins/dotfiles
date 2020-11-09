@@ -5,4 +5,4 @@ import_zshrc:
 	cp ~/.zshrc .
 
 import: import_vimrc import_zshrc
-	echo "Importing"
+	echo "Imported"
