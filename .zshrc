@@ -12,3 +12,5 @@ aws() {
 aws_update() {
     docker pull amazon/aws-cli:latest
 }
+
+eval "$(pyenv init -)"
