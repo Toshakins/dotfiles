@@ -7,6 +7,6 @@ set tabstop=4
 set shiftwidth=4
 set mouse=a
 set autowriteall
-set colorscheme delek
+set colorscheme=delek
 autocmd CursorHold,CursorHoldI * update
 
